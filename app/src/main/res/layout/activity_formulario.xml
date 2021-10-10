@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormularioActivity">
+
+    <EditText
+        android:id="@+id/etCPF"
+        android:layout_width="401dp"
+        android:layout_height="93dp"
+        android:layout_marginBottom="72dp"
+        android:ems="10"
+        android:hint="CPF"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etNome"
+        tools:layout_editor_absoluteX="2dp" />
+
+    <EditText
+        android:id="@+id/etNome"
+        android:layout_width="405dp"
+        android:layout_height="107dp"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@id/etCPF"
+        tools:layout_editor_absoluteX="3dp" />
+
+    <EditText
+        android:id="@+id/etFuncao"
+        android:layout_width="403dp"
+        android:layout_height="88dp"
+        android:ems="10"
+        android:hint="Função"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@id/etNome"
+        tools:layout_editor_absoluteX="5dp" />
+
+    <Spinner
+        android:id="@+id/spEstadoCivil"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:entries="@array/estadoCivil"
+        app:layout_constraintTop_toBottomOf="@id/etFuncao"
+        tools:layout_editor_absoluteX="3dp" />
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Salvar"
+        app:layout_constraintTop_toBottomOf="@id/spEstadoCivil"
+        tools:layout_editor_absoluteX="148dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
